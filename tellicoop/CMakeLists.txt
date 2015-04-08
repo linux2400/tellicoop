@@ -7,7 +7,7 @@ include(KDE4Defaults)
 include(FindQImageBlitz)
 set(TELLICO_DATA_INSTALL_DIR ${DATA_INSTALL_DIR}/tellico)
 
-include_directories( .. ../src/core ../src/3rdparty ${KDE4_INCLUDES} ${CMAKE_CURRENT_BINARY_DIR} ${QIMAGEBLITZ_INCLUDES} ${LIBXML2_INCLUDE_DIR})
+include_directories( ../src ../src/core ../src/3rdparty ${KDE4_INCLUDES} ${CMAKE_CURRENT_BINARY_DIR} ${QIMAGEBLITZ_INCLUDES} ${LIBXML2_INCLUDE_DIR})
 
 add_subdirectory(../src/core "${CMAKE_CURRENT_BINARY_DIR}/core") 
 add_subdirectory(../src/images "${CMAKE_CURRENT_BINARY_DIR}/images")

@@ -75,6 +75,8 @@ public:
   void setSortTitles(const QStringList& l)
     { m_sort1 = l[0]; m_sort2 = l[1]; m_sort3 = l[2]; }
   void setColumns(const QStringList& columns) { m_columns = columns; }
+  void setEntryXSLTFile(const QString& entryXSLTFile) { m_entryXSLTFile = entryXSLTFile; } 	
+  void setExportEntryFiles(bool exportEntryFiles) { m_exportEntryFiles = exportEntryFiles; } 
   void setParseDOM(bool parseDOM) { m_parseDOM = parseDOM; reset(); }
 
   QString text();
